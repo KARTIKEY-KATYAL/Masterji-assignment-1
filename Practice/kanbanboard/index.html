@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kan Ban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kanban">
+        <div id ="todo" class="container">
+            <h2 class="heading">Todo</h2>
+            <!-- <h4 id="todotaskscount" class="count">Count :</h4> -->
+            <p draggable="true" class="items">Task 1</p>
+        </div>
+        <div id="inprocess" class="container">
+            <h2 class="heading">Inprogress</h2>
+            <!-- <h4 id="inprogresstaskscount" class="count">Count :</h4> -->
+            
+        </div>
+        <div id="done" class="container">
+            <h2 class="heading">Done</h2>            
+            <!-- <h4 id="donetaskscount" class="count">Count :</h4> -->
+        </div>
+    </div>
+    <button id="addtaskbtn">Add New Task</button>
+    <button id="addcontainer">+</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,600;1,600&family=Open+Sans:wght@700&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,700;1,700&family=Schibsted+Grotesk:ital,wght@0,800;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,600;1,600&family=Open+Sans:wght@700&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,700;1,700&family=Schibsted+Grotesk:ital,wght@0,800;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green;
+    gap: 30px;
+    
+    /* Center content */
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#text{
+     font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: larger;
+}
+
+#heading{
+ font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  color: blue;
+}
+
+#btn{
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.quote{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 400px;
+    text-align: center;
+    font-size: larger;
+}

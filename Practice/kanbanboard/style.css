@@ -1,0 +1,55 @@
+*{
+    margin: 20px 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#kanban{
+    display: flex;
+    gap: 10px;
+    border: 3px solid white;
+}
+#addtaskbtn{
+      height: 40px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 70vh;
+    gap: 2px;
+    background-color: blue;
+}
+
+.count{
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+}
+
+#addcontainer{
+    height: 40px;
+    width: 40px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.items{
+    border: 1px solid black;
+    padding: 20px 10px;
+    background-color: coral;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heading{
+    color: white;
+    font-size: medium;
+}

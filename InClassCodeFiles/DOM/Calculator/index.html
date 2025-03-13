@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body class="flex flex-col bg-[url('./background.jpg')] items-center justify-center min-h-screen bg-gray-900 w-full p-10">
+    <div class="bg-[url('./background2.jpg')] bg-cover bg-center px-6 py-6 rounded-lg shadow-2xl text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-6 bg-white font-mono p-3 rounded-md">Calculator</h1>
+        <div class="max-w-xs w-80 p-4 bg-gray-800 text-white rounded-lg shadow-lg">
+            <!-- Display -->
+            <div id="display" class="mb-4 p-4 text-right text-3xl bg-gray-700 rounded-lg font-mono">0</div>
+            
+            <!-- Buttons Grid -->
+            <div class="grid grid-cols-4 gap-3">
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">7</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">8</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">9</button>
+                <button class="op-btn p-4 bg-orange-500 rounded-full text-xl font-extrabold hover:bg-orange-400 ">/</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">4</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">5</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">6</button>
+                <button class="op-btn p-4 bg-orange-500 rounded-full text-xl font-extrabold hover:bg-orange-400 ">×</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">1</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">2</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">3</button>
+                <button class="op-btn p-4 bg-orange-500 rounded-full text-xl font-extrabold hover:bg-orange-400 ">-</button>
+                <button class="num-btn col-span-2 p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">0</button>
+                <button class="num-btn p-4 bg-gray-600 rounded-lg text-xl hover:bg-gray-500">.</button>
+                <button class="op-btn p-4 bg-orange-500 rounded-full text-xl font-extrabold hover:bg-orange-400 ">+</button>
+                <button id="clear-btn" class="col-span-2 p-4 bg-red-500 rounded-lg text-xl hover:bg-red-400 font-bold">AC</button>
+                <button id="equals-btn" class="col-span-2 p-4 bg-blue-500 rounded-lg text-xl hover:bg-blue-400 font-bold">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
