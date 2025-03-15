@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,600;1,600&family=Open+Sans:wght@700&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,700;1,700&family=Schibsted+Grotesk:ital,wght@0,800;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    margin-bottom: 60vh;
+}
+#container{
+    width: 50vh;
+    height :80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #8bcbeec1;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.input{
+    font-weight: 700;
+    font-size: x-large;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: alternate;;
+}
+.inputfield{
+    width: 90%;
+    padding: 5px;
+    font-size: large;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calculate{
+    padding: 10px 20px;
+    font-size: large;
+    border: 1px solid brown;
+    border-radius: 5px;
+    background-color: darkblue;
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.resultbox{
+    width: auto;
+    padding: 10px;
+    font-size: large;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-weight: 700;
+    color: darkblue;
+}
+
+.result{
+    color: brown;
+    font-size: x-large;
+}
+
+#heading{
+    font-family: "Lato",
+        sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+    margin-bottom: 0%;
+}

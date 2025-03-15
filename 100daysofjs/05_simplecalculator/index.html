@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Simple Calculator</h1>
+    <input type="number" name="no1" id="firstNo" placeholder="Enter first number">
+    <input type="number" name="no2" id="secondNo" placeholder="Enter second number">
+    <div id="operators">
+    <button onclick="oper('+')">+</button>
+    <button onclick="oper('-')">-</button>
+    <button onclick="oper('*')">×</button>
+    <button onclick="oper('/')">/</button>
+    </div>
+    <div id="resultbox">Result : <span id="result"></span></div>
+    <script src="script.js"></script>
+</body>
+</html>

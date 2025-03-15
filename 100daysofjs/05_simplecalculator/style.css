@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1;
+    border-width: 10px;
+    border-color: #f1f1f1;
+    border: #333;
+}
+#operators{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#heading{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#operators button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#operators button:hover {
+    font-size: 1.5rem;
+    transform-style: preserve-3d;
+    transition: all 0.3s;
+}
+
+#operators button:active {
+    transform: translateY(2px);
+}
+
+#resultbox{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#result{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
