@@ -4,6 +4,19 @@ function Calculate(params) {
     const noofperson = parseInt(document.getElementById("noofperson").value);
     const totalamountdiv = document.getElementById("total");
     const perpersonamountdiv = document.getElementById("perpersonamount");
+
+   if (Number.isNaN(amount) || amount <= 0) {
+     alert("Please enter a valid bill amount");
+     return;
+   }
+   if (Number.isNaN(tippercent) || tippercent < 0) {
+     alert("Please enter a valid tip percentage");
+     return;
+   }
+   if (Number.isNaN(noofperson) || noofperson <= 0) {
+     alert("Please enter a valid number of people");
+     return;
+   }
     
     const tipamount = (amount * tippercent) / 100;
     const perpersonamount = tipamount / noofperson;
