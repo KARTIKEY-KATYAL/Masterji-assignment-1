@@ -1,227 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,600;1,600&family=Open+Sans:wght@700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,700;1,700&family=Schibsted+Grotesk:ital,wght@0,800;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+/*----------------------------------------------
+   Global Styles
+----------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    height: 100vh;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+    background-color: #2C2E57;
+    color: white;
+    padding: 20px;
 }
 
+/*----------------------------------------------
+   Mood Picker Heading
+   This is the main heading for the mood picker.
+----------------------------------------------*/
 #heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F1F3F8;
     text-align: center;
-    margin-top: 20px;
 }
 
+/*----------------------------------------------
+   Mood Container
+   Container for the mood buttons and logs.
+----------------------------------------------*/
 #container {
+    width: 80%;
+    background-color: #F4F4F8;
+    padding: 20px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin-top: 20px;
-    width: 90%;
-    height: 90%;
+    gap: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/*----------------------------------------------
+   Mood Buttons Area
+   Container that holds individual mood buttons.
+----------------------------------------------*/
 #moodbox {
-    width: 85%;
     display: flex;
+    gap: 1rem;
+}
+
+/*----------------------------------------------
+   Individual Mood Buttons
+   These buttons allow the user to pick a mood.
+----------------------------------------------*/
+.moodbtn {
+    padding: 15px;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
-    border: 2px solid black;
-    padding: 10px 20px;
-    border-radius: 40px;
-    margin-bottom: 20px;
 }
 
-.moods {
-    padding: 5px 10px;
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: medium;
-    margin-top: 0px;
-
+/* Scale mood button on hover for feedback */
+.moodbtn:hover {
+    transform: scale(1.1);
 }
 
-#calendar {
-    width: 90%;
-    display: grid;
-    border: 1px solid black;
-    justify-content: center;
-    height: 70%;
-    border-radius: 12px;
+/*----------------------------------------------
+   Mood Button Colors
+   Each nth-child represents a different mood.
+----------------------------------------------*/
+/* Happy - Gold */
+.moodbtn:nth-child(1) {
+    background-color: #FFD700;
 }
 
-#calendar-input {
-    border: 1px solid black;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    border-radius: 50px;
+/* Sad - Blue */
+.moodbtn:nth-child(2) {
+    background-color: #6495ED;
 }
 
-.headings {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: x-large;
+/* Neutral - Gray */
+.moodbtn:nth-child(3) {
+    background-color: #A9A9A9;
 }
 
+/* Excited - Orange */
+.moodbtn:nth-child(4) {
+    background-color: #FF4500;
+}
+
+/*----------------------------------------------
+   Mood Logs Section
+   Grid layout for displaying individual mood logs.
+----------------------------------------------*/
 #moodlogs {
-    width: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 80%;
+}
+
+/*----------------------------------------------
+   Individual Mood Log Entry
+   Each log contains details of the mood selected.
+----------------------------------------------*/
+.logs {
+    background-color: #001524;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
     display: flex;
-    border: 1px solid black;
-    height: 70%;
-    border-radius: 12px;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+    font-size: larger;
 }
 
-#mainheading {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+/*----------------------------------------------
+   Clear Button
+   Button style for clearing mood logs.
+----------------------------------------------*/
+.clearbtn {
+    border: none;
+    background-color: white;
+    color: #FF6B6B;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect for clear button */
+.clearbtn:hover {
+    background-color: red;
+    color: white;
+}
+
+/*----------------------------------------------
+   Date Text
+   Formats the date information in logs.
+----------------------------------------------*/
+.date {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/*----------------------------------------------
+   Emoji Display
+   Styles the emoji inside the log.
+----------------------------------------------*/
+.emoji {
     font-size: xx-large;
 }
 
-.mood {
-    margin-top: 5px;
-    width: fit-content;
-    justify-content: center;
-    border: 1px solid red;
-    margin-bottom: 5px;
-    width: 90%;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-#pastmoods {
-    border: 1px solid black;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+/*----------------------------------------------
+   Log Details Container
+   Aligns additional log details horizontally.
+----------------------------------------------*/
+.log-details {
+    display: flex;
+    align-items: center;
     gap: 10px;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 5px;
-    height: 90%;
-}
-
-@media screen and (max-width: 768px) {
-    #container {
-        width: 95%;
-        padding: 10px;
-    }
-
-    #moodbox {
-        width: 95%;
-        gap: 20px;
-        padding: 10px;
-        flex-wrap: wrap;
-    }
-
-    .moods {
-        font-size: small;
-        padding: 5px 8px;
-    }
-
-    #calendar {
-        width: 95%;
-    }
-
-    #moodlogs {
-        width: 95%;
-    }
-
-    .mood {
-        width: 95%;
-        padding: 8px 15px;
-    }
-
-    #pastmoods {
-        width: 95%;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-        padding: 10px;
-    }
-
-    #mainheading {
-        font-size: x-large;
-    }
-
-    .headings {
-        font-size: large;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #moodbox {
-        gap: 10px;
-        height: fit-content;
-        margin-bottom: 15px;
-    }
-
-    .moods {
-        font-size: x-small;
-        padding: 4px 6px;
-        height: fit-content;
-    }
-
-    #pastmoods {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        height: fit-content;
-        min-height: 200px;
-        overflow-y: auto;
-    }
-
-    #container {
-        height: fit-content;
-        min-height: 100vh;
-        padding: 15px 10px;
-    }
-
-    #moodlogs {
-        height: fit-content;
-        min-height: 250px;
-        padding: 10px;
-    }
-
-    #calendar {
-        height: fit-content;
-        min-height: 250px;
-        padding: 10px;
-    }
-
-    .mood {
-        height: fit-content;
-        margin: 5px 0;
-    }
-
-    #mainheading {
-        font-size: large;
-    }
-
-    .headings {
-        font-size: medium;
-    }
-
-    #container {
-        height: auto;
-        min-height: 100vh;
-    }
-
-    #moodlogs {
-        height: auto;
-        min-height: 300px;
-    }
-
-    #calendar {
-        height: auto;
-        min-height: 300px;
-    }
 }

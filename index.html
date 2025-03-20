@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Mood Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <h1 id="mainheading" class="headings">Mood Picker</h1> -->
+
+    <h1 id="heading">Mood Picker</h1>
+
     <div id="container">
+        <!-- Mood Buttons -->
         <div id="moodbox">
-            <button id="mood-1" class="moods">Happy</button>
-            <button id="mood-2" class="moods">Sad</button>
-            <button id="mood-3" class="moods">Neutral</button>
-            <button id="mood-4" class="moods">Exicted</button>
+            <button class="moodbtn" onclick="addmood('happy')">😀</button>
+            <button class="moodbtn" onclick="addmood('sad')">😔</button>
+            <button class="moodbtn" onclick="addmood('neutral')">😑</button>
+            <button class="moodbtn" onclick="addmood('excited')">😃</button>
         </div>
-        <input type="date" name="calendar-input" placeholder="Enter Your Date" id="calendar-input">
-        <div id="moodlogs" >
-            <h1 id="moodlogs-headings" class="headings">Moodlogs</h1>
-            <div id="pastmoods">
-               
-            </div>
-        </div>
+
+        <!-- Mood Logs -->
+        <div id="moodlogs"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
