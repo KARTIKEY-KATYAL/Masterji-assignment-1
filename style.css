@@ -1,0 +1,184 @@
+/*----------------------------------------------
+   Global Styles
+----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+    background-color: #2C2E57;
+    color: white;
+    padding: 20px;
+}
+
+/*----------------------------------------------
+   Mood Picker Heading
+   This is the main heading for the mood picker.
+----------------------------------------------*/
+#heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F1F3F8;
+    text-align: center;
+}
+
+/*----------------------------------------------
+   Mood Container
+   Container for the mood buttons and logs.
+----------------------------------------------*/
+#container {
+    width: 80%;
+    background-color: #F4F4F8;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*----------------------------------------------
+   Mood Buttons Area
+   Container that holds individual mood buttons.
+----------------------------------------------*/
+#moodbox {
+    display: flex;
+    gap: 1rem;
+}
+
+/*----------------------------------------------
+   Individual Mood Buttons
+   These buttons allow the user to pick a mood.
+----------------------------------------------*/
+.moodbtn {
+    padding: 15px;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scale mood button on hover for feedback */
+.moodbtn:hover {
+    transform: scale(1.1);
+}
+
+/*----------------------------------------------
+   Mood Button Colors
+   Each nth-child represents a different mood.
+----------------------------------------------*/
+/* Happy - Gold */
+.moodbtn:nth-child(1) {
+    background-color: #FFD700;
+}
+
+/* Sad - Blue */
+.moodbtn:nth-child(2) {
+    background-color: #6495ED;
+}
+
+/* Neutral - Gray */
+.moodbtn:nth-child(3) {
+    background-color: #A9A9A9;
+}
+
+/* Excited - Orange */
+.moodbtn:nth-child(4) {
+    background-color: #FF4500;
+}
+
+/*----------------------------------------------
+   Mood Logs Section
+   Grid layout for displaying individual mood logs.
+----------------------------------------------*/
+#moodlogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 80%;
+}
+
+/*----------------------------------------------
+   Individual Mood Log Entry
+   Each log contains details of the mood selected.
+----------------------------------------------*/
+.logs {
+    background-color: #001524;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: larger;
+}
+
+/*----------------------------------------------
+   Clear Button
+   Button style for clearing mood logs.
+----------------------------------------------*/
+.clearbtn {
+    border: none;
+    background-color: white;
+    color: #FF6B6B;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect for clear button */
+.clearbtn:hover {
+    background-color: red;
+    color: white;
+}
+
+/*----------------------------------------------
+   Date Text
+   Formats the date information in logs.
+----------------------------------------------*/
+.date {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/*----------------------------------------------
+   Emoji Display
+   Styles the emoji inside the log.
+----------------------------------------------*/
+.emoji {
+    font-size: xx-large;
+}
+
+/*----------------------------------------------
+   Log Details Container
+   Aligns additional log details horizontally.
+----------------------------------------------*/
+.log-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -9,7 +9,7 @@ export const RegisterUser = async (req, res) => {
   // valiation
   // check if user already exist
   // create new user
-  // create a verification token
+  // create a verification tokena
   // send verification token on email
   // save verification token in db
   // send success msg to user

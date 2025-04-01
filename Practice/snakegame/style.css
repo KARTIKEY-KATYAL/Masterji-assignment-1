@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #12664F;
+    align-items: center;
+    justify-content: center;
+}
+
+#score-board{
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #DCE1DE;
+    color: #412234;
+    gap: 10px;
+    font-weight: 900;
+    font-size: larger;
+    margin-left: auto;
+    margin-bottom: auto;
+    border-radius: 4px;
+    color: #031926;
+    font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+}
+
+
+
+#score-board{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #DCE1DE;
+    gap: 10px;
+    font-weight: 900;
+    font-size: larger;
+    border-radius: 4px;
+    color: #031926;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.heading {
+    position: absolute;
+    top: 0%;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #1EFC1E;
+    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+}
+
+
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    #container {
+        height: 90%;
+        width: 90%;
+    }
+    
+    #score-board {
+        font-size: medium;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        height: 95%;
+        width: 95%;
+    }
+}
+
+#game-board{
+    border: 7px solid white;
+}
