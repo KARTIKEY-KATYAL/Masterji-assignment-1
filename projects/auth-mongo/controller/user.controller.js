@@ -148,12 +148,12 @@ export const LoginUser = async (req, res) => {
 
     // ✅ Compare password (Fixed bcrypt issue)
     const isMatched = await bcrypt.compare(user.password, password);
-// console.log(isMatched)
-    // if (!isMatched) {
-    //   return res.status(400).json({
-    //     message: "Password is incorrect",
-    //   });
-    // }
+console.log(isMatched)
+    if (!isMatched) {
+      return res.status(400).json({
+        message: "Password is incorrect",
+      });
+    }
 
     // ✅ Check if user is verified
     if (!user.isVerified) {
