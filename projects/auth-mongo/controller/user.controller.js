@@ -5,6 +5,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken"
 
 export const RegisterUser = async (req, res) => {
+  
   // Take name , email ,password from body
   // valiation
   // check if user already exist
@@ -13,6 +14,7 @@ export const RegisterUser = async (req, res) => {
   // send verification token on email
   // save verification token in db
   // send success msg to user
+  
   const { name, email, password } = req.body;
 
   if (!name || !email || !password) {
